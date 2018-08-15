@@ -13,4 +13,12 @@ class School
   else
     @roster[grade] = [name]
   end
+  def grade(grade)
+    @roster[grade]
+  end
+  def sort
+    @roster.each do |key, value|
+      value.sortend
+    end
+  end
 end
